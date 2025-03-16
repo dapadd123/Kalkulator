@@ -1,0 +1,136 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+}
+
+/* Container utama */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Kalkulator */
+.calculator {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.calculator h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Display */
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 1.8em;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    background: #eaeaea;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Tombol */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #f1f1f1;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+.operator {
+    background: #ff8c00;
+    color: white;
+}
+
+.operator:hover {
+    background: #e07b00;
+}
+
+.equal {
+    background: #28a745;
+    color: white;
+}
+
+.equal:hover {
+    background: #218838;
+}
+
+/* History */
+.history {
+    background: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    color: #333;
+}
+
+.history h2 {
+    margin-bottom: 10px;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#history-list li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Tombol hapus history */
+.clear-history {
+    background: red;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.clear-history:hover {
+    background: darkred;
+}
